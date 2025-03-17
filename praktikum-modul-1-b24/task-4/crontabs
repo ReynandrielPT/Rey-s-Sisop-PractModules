@@ -1,0 +1,4 @@
+0 0 * * * /bin/bash ~/praktikum-modul-1-b24/task-4/isabel.sh isabel-d
+0 2 * * * /bin/bash ~/praktikum-modul-1-b24/task-4/isabel.sh isabel-c
+57 3 * * * /bin/bash ~/praktikum-modul-1-b24/task-4/isabel.sh isabel-b
+59 3 * * * /bin/bash ~/praktikum-modul-1-b24/task-4/isabel.sh isabel-a

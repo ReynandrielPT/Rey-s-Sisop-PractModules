@@ -1,0 +1,33 @@
+version: "3.8"
+
+networks:
+  Shani-net:
+    driver: bridge
+
+services:
+  laravel:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: bash -c "php artisan migrate --seed && php artisan serve --host=0.0.0.0 --port=80"
+    container_name: laravel
+    restart: always
+    ports:
+      - "9090:80"
+    networks:
+      - Shani-net
+    depends_on:
+      - mysql
+
+  mysql:
+    image: mysql:5.7
+    container_name: mysql
+    restart: unless-stopped
+    tty: true
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_DATABASE=keyisa
+      - MYSQL_ROOT_PASSWORD=secret
+    networks:
+      - Shani-net

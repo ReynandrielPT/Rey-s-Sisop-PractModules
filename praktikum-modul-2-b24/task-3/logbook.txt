@@ -1,0 +1,16 @@
+[2024-04-20 19:51:49] Successfully download file.
+[2024-04-20 19:51:49] Successfully unzip file.
+[2024-04-20 19:51:49] Successfully drop row with Suhu Udara 87°C
+[2024-04-20 19:51:49] Successfully drop row with Suhu Udara 87°C
+[2024-04-20 19:51:50] Successfully drop row with Suhu Udara 111°C
+[2024-04-20 19:51:50] Successfully drop row with Suhu Udara 87°C
+[2024-04-20 19:51:50] Successfully drop row with Suhu Udara 111°C
+[2024-04-20 19:51:50] Successfully drop row with Suhu Udara 101°C
+[2024-04-20 19:51:50] Successfully drop row with Suhu Udara 45°C
+[2024-04-20 19:51:50] Successfully drop row with Suhu Udara 87°C
+[2024-04-20 19:51:53] Successfully drop row with Suhu Udara 98°C
+[2024-04-20 19:51:53] Successfully drop row with Suhu Udara 56°C
+[2024-04-20 19:51:53] Successfully drop row with Suhu Udara 56°C
+[2024-04-20 19:51:53] Successfully drop row with Suhu Udara 56°C
+[2024-04-20 19:51:53] Successfully drop row with Suhu Udara 65°C
+[2024-04-20 19:51:54] Successfully data grouping..

@@ -1,0 +1,33 @@
+version: '3'
+
+services:
+  tank:
+    image: dockerimage
+    command: ["./ayamgoreng", "TANK"]
+    scale: 6
+    
+  assassin:
+    image: dockerimage
+    command: ["./ayamgoreng", "ASSASSIN"]
+    scale: 6
+
+  fighter:
+    image: dockerimage
+    command: ["./ayamgoreng", "FIGHTER"]
+    scale: 6
+
+  marksman:
+    image: dockerimage
+    command: ["./ayamgoreng", "MM"]
+    scale: 6
+
+  mage:
+    image: dockerimage
+    command: ["./ayamgoreng", "MAGE"]
+    scale: 6
+
+  support:
+    image: dockerimage
+    command: ["./ayamgoreng", "SUPPORT"]
+    scale: 6
+

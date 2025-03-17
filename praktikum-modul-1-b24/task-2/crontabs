@@ -1,0 +1,1 @@
+0 * * * * !/bin/bash ~/praktikum-modul-1-b24/task-2/yu_database.sh
