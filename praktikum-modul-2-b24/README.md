@@ -1785,19 +1785,23 @@ void grouping(const char *input_file, const char *dir) {
         fclose(fp_out);
     }
     fclose(fp_in);
- ...
+ 
 }
 ```
+
 Pada subsoal C, diminta untuk mengelompokkan data-data dari dataset tersebut berdasarkan id lokasi dan memisahkannya menjadi dataset baru dengan format nama "city_Idlokasi" lalu dimasukkan ke dalam folder bernama "city_group". Mulanya dibuatlah suatu fungsi untuk memastikan atau _ensure_ apakah file city_group sudah ada sebelumnya atau belum, jika belum maka buat folder city_group. Kemudian dibuatlah suatu fungsi grouping untuk pengelompokkannya. Grouping dimulai dengan membuka file dataset, apabila gagal maka keluarkan "Failed to open input file". Kemudian panggil fungsi ensure untuk memastikan folder city_group telah ada atau belum. Lalu kolom pertama akan menjadi nilai acuan id location. Kemudian fungsi grouping akan mengecek apakah id terakhir sama dengan id location sekarang dan ketika file output terbuka, apabila tidak (pertama kali pasti tidak karerna id terakhir pasti nilainya 0), maka lanjut ke berikutnya. Selanjutnya dicek apabila file output dibuka atau tidak, bila tidak maka buka file sesuai dengan directory dengan nama city_idlocation (bila belum ada akan otomatis terbuat), lalu fp_out (file output) diberi nilai hasil perintah membuka write file dengan directory tersebut, apabila gagal maka keluarkan "Failed to open output file". Lalu copy id location ke id terakhir (last_id), dan program akan memasukkan baris sekarang ke dalam file dengan directory yang telah dibuat (city_idlocation). Dilakukan terus menerus hingga data habis. Apabila ternyata file terbuka dan id locationnya masih sama maka tidak diperlukan untuk membuat/membuka file city_ lainnya (bisa baru bila belum ada sebelumnya, ataupun membuka yang sudah ada sebelumnya). Apabila sudah selesai maka file output dan file input ditutup. 
 
 Untuk pemanggilan fungsi dalam program utama dapat dilakukan sebagai berikut:
 ```
 grouping(fp, "weather/city_group");
 ```
+
 Dengan nilai fp adalah "weather/kecamatanforecast.csv".
 
 - d. Logging
 Code:
+
+```
 void logging(const char* act_msg) {
     char msg[1024];
     time_t t = time(NULL);
@@ -1944,14 +1948,17 @@ Sesuai permintaan soal, setiap pendowloadan, pengunzipan, preprocessing, dan gro
 ```
 logging("Successfully download file.");
 ```
+
 Fungsi logging dipanggil dengan pesan inputan yakni "Successfully download file." sehingga pesan menjadi "[tahun-bulan-tanggal jam:menit:detik] Successfully download file.", begitu juga untuk fungsi-fungsi lainya.
 Setelah terbentuk pesan secara lengkap (beserta waktu), fungsi akan membuka file "logbook.txt" dan memasukkan pesan kedalam file tersebut. Kemudian apabila sudah dimasukkan, file ditutup.
 
 Adapula fungsi log_drop untuk kegunaan secara khusus yaitu untuk logging ketika preprocessing (terdapat baris yang di drop). Fungsi log_drop akan mengambil inputan dari pemanggil berupa suhu (string) dan value (integer). Berikut adalah contoh pemanggilan fungsi log_drop dari fungsi preprocess:
+
 ```
 log_drop("Suhu Udara", at)
 ```
 Fungsi log_drop dipanggil dengan memasukkan string "Suhu Udara" dan variabel 'at' untuk value dari suhunya. Ketika sampai di fungsi log_drop, fungsi akan menyusun pesan dengan format "Successfully drop row with %s %d°C" dengan '%s' adalah string 'suhu' yang berisikan "Suhu Udara" dan '%d' adalah nilai dari integer 'value' yang berisikan nilai dari integer 'at'. Lalu fungsi diakhiri dengan pemanggilan fungsi logging dengan pesan yang telah tersusun untuk memasukkan pesan (logging) ke dalam file "logbook.txt". Berikut adalah pemanggilan fungsi logging oleh fungsi log_drop:
+
 ```
 logging(msg); //msg adalah pesan yang sudah disusun sebelumnya
 ```
@@ -2474,6 +2481,8 @@ Kemudian kode akan mengambil inputan dari user. Inputan dimasukkan kedalam varia
 Ketika user memasukkan inputan yang salah, loop diulang dan user diminta memasukkan kembali.
 
 Code game.c:
+
+```
  while (1) {
         msgrcv(msgid, &msg, sizeof(msg), 1, 0);
         if(msg.message_text[5] == 'X' &&  flag==0){
@@ -2497,6 +2506,8 @@ Code game.c:
                 }
                 
             }
+```
+
 Bagian kode tersebut adalah penggalan dari suatu loop yang bersifat always true. Game.c akan terus menerus menunggu dan menerima inputan dari player.c sampai game berakhir (di setiap awal loop), dan akan mengembalikan message ke player.c sesuai kebutuhan. Untuk pemilihan player, disini game.c menerima message dari player.c, kemudian dicek apakah sudah terdapat atau belum. Disini status pemain dibuat dalam suatu array integer roles dimana pada index 0 adalah status X dan index 1 adalah status O. Maka dicek apabila pilihan pemain X pada player.c, dicek lagi apakah sudah terpilih belum, bila belum maka beri nilai 1 pada roles[0] dan kirimkan pesan True1, apabila sudah kirimkan False, apabila pilihannya berlawanan X (O) kirimkan True (begitu juga sebaliknya). 
 
 Sekedar tambahan, pengondisian diawal (penggunaan variabel step) dan flag digunakan untuk menentukan pertama kali tipe player yang dipilih pemain, (untuk menentukan urutan, kami disini urutannya tergantung dari player mana yang memilih role terlebih dahulu).
