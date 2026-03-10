@@ -1,0 +1,6 @@
+*dijakankan di awal*
+*/2 * * * * /home/freddskiii/automation.sh
+
+*dalam automation.sh*
+* */2 * * * /home/freddskiii/archive.sh
+*/10 * * * * /home/freddskiii/download.sh

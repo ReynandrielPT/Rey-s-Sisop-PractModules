@@ -1,0 +1,9 @@
+*/5 * * * * /home/sakuya/tugas_4/minute5_log.sh
+
+
+0 * * * * /home/sakuya/tugas_4/agg_5min_to_hour.sh
+
+
+0 * * * * /home/sakuya/tugas_4/uptime_monitor.sh
+
+0 0 * * * /home/sakuya/tugas_4/cleanup_log.sh

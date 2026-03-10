@@ -1,0 +1,2 @@
+* * * * * !/bin/bash ~/praktikum-modul-1-b24/task-3/minute_log.sh
+0 * * * * !/bin/bash ~/praktikum-modul-1-b24/task-3/aggregate_minutes_to_hourly_log.sh

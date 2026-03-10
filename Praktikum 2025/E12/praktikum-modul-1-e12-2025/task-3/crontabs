@@ -1,0 +1,3 @@
+*/2 * * * * /home/sakuya/tugas_3/automation.sh
+*/10 * * * * /home/sakuya/tugas_3/download.sh
+0 */2 * * * /home/sakuya/tugas_3/archive.sh

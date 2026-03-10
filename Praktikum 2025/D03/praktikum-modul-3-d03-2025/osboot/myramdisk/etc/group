@@ -1,0 +1,7 @@
+root:x:0:
+bin:x:1:root
+sys:x:2:root
+tty:x:5:root,Budiman,guest,praktikan1,praktikan2
+disk:x:6:root
+wheel:x:10:root,Budiman,praktikan1,praktikan2
+users:x:100:Budiman,praktikan1,praktikan2

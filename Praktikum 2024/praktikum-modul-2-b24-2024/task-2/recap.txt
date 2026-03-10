@@ -1,0 +1,29 @@
+[2024-04-20 15:46:37]-[Yuan] Task 12 completed, download 3 minimalist images with 100x250 resolution
+[2024-04-20 15:46:37]-[Bubu] Task 0 completed, download 1 music images with 300x300 resolution
+[2024-04-20 15:46:37]-[Bubu] Task 1 completed, download 1 nature images with 200x150 resolution
+[2024-04-20 15:46:37]-[Yuan] Task 18 completed, download 1 nature images with 250x150 resolution
+[2024-04-20 15:46:37]-[Bubu] Task 3 completed, download 1 fruit images with 200x150 resolution
+[2024-04-20 15:46:37]-[Yuan] Task 17 completed, download 1 minimalist images with 150x250 resolution
+[2024-04-20 15:46:37]-[Yuan] Task 13 completed, download 2 face images with 150x200 resolution
+[2024-04-20 15:46:48]-[Bubu] Task 9 completed, download 4 summer images with 200x250 resolution
+[2024-04-20 15:46:56]-[Bubu] Task 5 completed, download 5 music images with 250x150 resolution
+[2024-04-20 15:46:56]-[Yuan] Task 16 completed, download 3 face images with 250x150 resolution
+[2024-04-20 15:46:56]-[Yuan] Task 11 completed, download 2 fruit images with 150x250 resolution
+[2024-04-20 15:47:13]-[Bubu] Task 4 completed, download 3 night images with 300x250 resolution
+[2024-04-20 15:47:13]-[Bubu] Task 8 completed, download 4 fruit images with 200x300 resolution
+[2024-04-20 15:47:30]-[Yuan] Task 10 completed, download 3 nature images with 300x200 resolution
+[2024-04-20 15:47:30]-[Yuan] Task 15 completed, download 4 city images with 200x200 resolution
+[2024-04-20 15:47:38]-[Yuan] Task 14 completed, download 4 summer images with 250x200 resolution
+[2024-04-20 15:47:38]-[Bubu] Task 7 completed, download 5 fruit images with 200x250 resolution
+[2024-04-20 15:47:38]-[Bubu] Task 2 completed, download 4 night images with 200x150 resolution
+[2024-04-20 15:47:43]-[Bubu] Task 6 completed, download 5 minimalist images with 300x100 resolution
+[2024-04-20 15:47:43]-[Yuan] Task 19 completed, download 4 city images with 250x300 resolution
+music: 6 images
+nature: 5 images
+minimalist: 9 images
+night: 7 images
+city: 8 images
+fruit: 12 images
+face: 5 images
+summer: 8 images
+total images: 60 images
